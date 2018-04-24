@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--图片相关常识
+			1、
+		-->
+		<!--src属性
+			绝对路径
+			1、http://   file:///d:/   /   开头的为绝对路径，相反没有这些的为相对路径
+			2、绝对路径中只有http://常用，其余不常用
+			相对路径
+			1、浏览器会以当前浏览器地址栏中的地址作为基准地址
+			浏览器的动作
+			1、当浏览器读取html文档中遇到此标签和此属性，浏览器会再次发送请求获取img资源
+			img标签支持的图片格式
+			1、jpg png gif
+			2、jpg和png都支持255的3次方种的颜色，而gif只支持255种颜色，jpg不支持透明、png和gif支持透明色、gif支持动图一般用在很小的图片和颜色较少的小图片
+		-->
+		<!--<img src="http://..../imags/test.jpg" />-->
+		<img src="../imags/test.jpg" />
+		
+		<!--accesskey 规定激活（使元素获得焦点）元素的快捷键
+			但是没有看到效果
+		-->
+		<br /><br /><br /><br /><br /><br /><br /><br />
+		<img src="../imags/test.jpg" accesskey="k" />
+		
+		<!--align属性
+			
+		-->
+		<img src="../imags/test.jpg" align="absmiddle"/>
+		<img src="../imags/test.jpg" align="absbottom"/>
+		
+		<!--alt属性 和 tile属性： 图片的描述文本，讲鼠标移动到图片上就会有效果
+			1、一个是ie有效，一个是标准网页有效，一般两个都要写
+			
+		-->
+		<img src="../imags/test.jpg" alt="你好，我是图片", title="你好我是图片"/>
+		
+		<!--width属性 和height属性： 图片的宽度和高度，单位是像素
+			1、尽可能不要失真，要和图片本身的像素一致
+			2、可以只指定其中一个属性，这样另一个属性会以图片实际宽高比例算出当前值
+		-->
+		<img src="../imags/test.jpg" id="kid" width="600px"/>
+	</body>
+</html>
